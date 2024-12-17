@@ -1,164 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog </title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans antialiased">
-  <!-- Header S -->
-  <header class="bg-purple-900 text-black-700">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Test Blog</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-          <li><a href="#about" class="hover:text-gray-400">About</a></li>
-          <li><a href="#categories" class="hover:text-gray-400">Categories</a></li>
-          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- Header S -->
+    <header class="bg-purple-900 text-black-700">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Test Blog</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#categories" class="hover:text-gray-400">Categories</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home S -->
+    <section id="home" class="py-12 bg-black-100 bg-purple-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Welcome to My Blog</h2>
+        <p class="text-center text-black-700 max-w-2xl mx-auto">
+          Discover exciting blog posts on technology, lifestyle, travel, food, and more. Dive into
+          curated content crafted for every reader.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Posts S -->
+    <section class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center">Featured Posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-purple-900 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform"
+          >
+            <img src="raw-food-400x250.png" alt="Post 1" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Food Posts</h3>
+              <p class="text-black-900">
+                This is a short excerpt for the first featured blog post.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-purple-900 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform"
+          >
+            <img
+              src="recent-experiences-solo-travel-group-travel-400x250.jpg"
+              alt="Post 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Travel Posts</h3>
+              <p class="text-black-900">
+                This is a short excerpt for the second featured blog post.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform bg-purple-900"
+          >
+            <img
+              src="Healthy-Lifestyle-400x250.jpg"
+              alt="Post 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2 bg-purple-900">Health & Lifestyle Posts</h3>
+              <p class="text-black-900">
+                This is a short excerpt for the third featured blog post.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category S -->
+    <section id="categories" class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6 bg-purple-900">
+        <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">Categories</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors"
+            >Technology</span
+          >
+          <span
+            class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors"
+            >Lifestyle</span
+          >
+          <span
+            class="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors"
+            >Travel</span
+          >
+          <span
+            class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors"
+            >Food</span
+          >
+          <span
+            class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors"
+            >Fitness</span
+          >
+          <span
+            class="bg-red-900 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors"
+            >Psychology</span
+          >
+          <span
+            class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors"
+            >Health</span
+          >
+          <span
+            class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition-colors"
+            >Adventure</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Posts S -->
+    <section class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6 bg-purple-900">
+        <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">Recent Posts</h2>
+        <ul class="space-y-4 bg-purple-900">
+          <li class="border-b pb-2 bg-purple-900">
+            <h3 class="text-lg font-semibold">How to Learn Tailwind CSS in 7 Days</h3>
+            <span class="text-black-500 text-sm">April 10, 2024</span>
+          </li>
+          <li class="border-b pb-2">
+            <h3 class="text-lg font-semibold">Top 10 Travel Destinations for 2024</h3>
+            <span class="text-black-500 text-sm">April 8, 2024</span>
+          </li>
+          <li class="border-b pb-2">
+            <h3 class="text-lg font-semibold">Best Fitness Routines for Busy People</h3>
+            <span class="text-black-500 text-sm">April 6, 2024</span>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </section>
 
-  <!-- Home S -->
-  <section id="home" class="py-12 bg-black-100 bg-purple-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">Welcome to My Blog</h2>
-      <p class="text-center text-black-700 max-w-2xl mx-auto">
-        Discover exciting blog posts on technology, lifestyle, travel, food, and more. Dive into curated content crafted for every reader.
-      </p>
-    </div>
-  </section>
+    <!-- Newsletter S -->
+    <section class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6 text-center bg-purple-900">
+        <h2 class="text-3xl font-bold mb-4 bg-purple-900">Subscribe to Our Newsletter</h2>
+        <p class="text-black-600 mb-6">
+          Stay updated with our latest blog posts and exclusive content.
+        </p>
+        <form class="max-w-md mx-auto flex">
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="flex-1 px-4 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-900"
+          />
+          <button
+            type="submit"
+            class="px-6 py-2 bg-purple-900 text-black-900 rounded-r-md hover:bg-purple-900 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
 
-  <!-- Featured Posts S -->
-  <section class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-8 text-center">Featured Posts</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-purple-900 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-          <img src="raw-food-400x250.png" alt="Post 1" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2">Food Posts</h3>
-            <p class="text-black-900">This is a short excerpt for the first featured blog post.</p>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-purple-900 shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
-          <img src="recent-experiences-solo-travel-group-travel-400x250.jpg" alt="Post 2" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2">Travel Posts</h3>
-            <p class="text-black-900">This is a short excerpt for the second featured blog post.</p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class=" shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform bg-purple-900">
-          <img src="Healthy-Lifestyle-400x250.jpg" alt="Post 3" class="w-full h-48 object-cover ">
-          <div class="p-4">
-            <h3 class="text-xl font-bold mb-2 bg-purple-900">Health & Lifestyle Posts</h3>
-            <p class="text-black-900">This is a short excerpt for the third featured blog post.</p>
-          </div>
+    <!-- About S-->
+    <section id="about" class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6 bg-purple-900">
+        <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">About Us</h2>
+        <p class="text-black-900 max-w-3xl mx-auto text-center">
+          MyBlog is a place to share knowledge, ideas, and stories that inspire. Whether you are a
+          tech enthusiast, a traveler, or a foodie, we aim to provide you with valuable content.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact S-->
+    <section id="contact" class="py-12 bg-purple-900">
+      <div class="container mx-auto px-6 bg-purple-900">
+        <h2 class="text-3xl font-bold mb-6 text-center bg">Contact Us</h2>
+        <form class="max-w-xl mx-auto space-y-4 bg-purple-900">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"
+          />
+          <textarea
+            rows="4"
+            placeholder="Your Message"
+            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full px-6 py-2 bg-black-500 text-black-900rounded-md hover:bg-purple-900 transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer S-->
+    <footer class="bg-purple-900 text-black-900 py-6">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center bg-purple-900"
+      >
+        <p class="text-center md:text-left bg-purple-900">
+          &copy; 2024 Test Blog. All rights reserved.
+        </p>
+        <div class="flex space-x-6 mt-4 md:mt-0 bg-purple-900">
+          <!-- Facebook I-->
+          <a href="#" class="hover:text-gray-400 text-2xl transition-all">
+            <i class="fab fa-facebook-f"><img src="icons8-facebook-48.png" alt="" /></i>
+          </a>
+          <!-- Twitter I -->
+          <a href="#" class="hover:text-gray-400 text-2xl transition-all p-2">
+            <i class="fab fa-twitter"> <img src="twitter.png" alt="" /></i>
+          </a>
+          <!-- Instagram I-->
+          <a href="#" class="hover:text-gray-400 text-2xl transition-all">
+            <i class="fab fa-instagram"> <img src="icons8-instagram-48.png" alt="" /></i>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Category S -->
-  <section id="categories" class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6 bg-purple-900" >
-      <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">Categories</h2>
-      <div class="flex flex-wrap justify-center gap-4">
-        <span class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors">Technology</span>
-        <span class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors">Lifestyle</span>
-        <span class="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors">Travel</span>
-        <span class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors">Food</span>
-        <span class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors">Fitness</span>
-        <span class="bg-red-900 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors">Psychology</span>
-        <span class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors">Health</span>
-        <span class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition-colors">Adventure</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Posts S -->
-  <section class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6 bg-purple-900">
-      <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">Recent Posts</h2>
-      <ul class="space-y-4 bg-purple-900">
-        <li class="border-b pb-2 bg-purple-900">
-          <h3 class="text-lg font-semibold">How to Learn Tailwind CSS in 7 Days</h3>
-          <span class="text-black-500 text-sm">April 10, 2024</span>
-        </li>
-        <li class="border-b pb-2">
-          <h3 class="text-lg font-semibold">Top 10 Travel Destinations for 2024</h3>
-          <span class="text-black-500 text-sm">April 8, 2024</span>
-        </li>
-        <li class="border-b pb-2">
-          <h3 class="text-lg font-semibold">Best Fitness Routines for Busy People</h3>
-          <span class="text-black-500 text-sm">April 6, 2024</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Newsletter S -->
-  <section class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6 text-center bg-purple-900">
-      <h2 class="text-3xl font-bold mb-4 bg-purple-900">Subscribe to Our Newsletter</h2>
-      <p class="text-black-600 mb-6">Stay updated with our latest blog posts and exclusive content.</p>
-      <form class="max-w-md mx-auto flex">
-        <input type="email" placeholder="Your Email" class="flex-1 px-4 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-900">
-        <button type="submit" class="px-6 py-2 bg-purple-900 text-black-900 rounded-r-md hover:bg-purple-900 transition-colors">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- About S-->
-  <section id="about" class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6 bg-purple-900">
-      <h2 class="text-3xl font-bold mb-6 text-center bg-purple-900">About Us</h2>
-      <p class="text-black-900 max-w-3xl mx-auto text-center">
-        MyBlog is a place to share knowledge, ideas, and stories that inspire. Whether you are a tech enthusiast, a traveler, or a foodie, we aim to provide you with valuable content.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact S-->
-  <section id="contact" class="py-12 bg-purple-900">
-    <div class="container mx-auto px-6 bg-purple-900">
-      <h2 class="text-3xl font-bold mb-6 text-center bg">Contact Us</h2>
-      <form class="max-w-xl mx-auto space-y-4 bg-purple-900">
-        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900">
-        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900">
-        <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"></textarea>
-        <button type="submit" class="w-full px-6 py-2 bg-black-500 text-white rounded-md hover:bg-purple-900 transition-colors">Send Message</button>
-      </form>
-    </div>
-  </section>
-
- <!-- Footer S-->
-<footer class="bg-purple-900 text-black-900 py-6">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center bg-purple-900">
-    <p class="text-center md:text-left bg-purple-900">&copy; 2024 Test Blog. All rights reserved.</p>
-    <div class="flex space-x-6 mt-4 md:mt-0 bg-purple-900">
-      <!-- Facebook I-->
-      <a href="#" class="hover:text-gray-400 text-2xl transition-all">
-        <i class="fab fa-facebook-f"><img src="icons8-facebook-48.png" alt=""></i>
-      </a>
-      <!-- Twitter I -->
-      <a href="#" class="hover:text-gray-400 text-2xl transition-all p-2">
-        <i class="fab fa-twitter"> <img src="twitter.png" alt=""></i>
-      </a>
-      <!-- Instagram I-->
-      <a href="#" class="hover:text-gray-400 text-2xl transition-all">
-        <i class="fab fa-instagram"> <img src="icons8-instagram-48.png" alt=""></i>
-      </a>
-    </div>
-  </div>
-</footer>
-
-<!-- Font -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </body>
+</html>
