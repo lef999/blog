@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans antialiased bg-gray-100">
+    <!-- Header -->
+    <header class="bg-purple-900 text-white">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Test Blog</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="p-5 hover:text-gray-400">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#categories" class="hover:text-gray-400">Categories</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="py-12 bg-purple-700 text-white text-center">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-4">Welcome to My Blog</h2>
+        <p class="max-w-2xl mx-auto">
+          Discover exciting blog posts on technology, lifestyle, travel, food, and more. Dive into curated content crafted for every reader.
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">About Us</h2>
+        <p class="max-w-3xl mx-auto text-gray-700">
+          Welcome to our blog! We are passionate about sharing insights and stories on technology, lifestyle, travel, food, and fitness. Our goal is to inspire, educate, and entertain readers from all walks of life. Join us as we explore topics that matter to you, and don’t hesitate to reach out with your thoughts or suggestions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Featured Posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+            <img src="raw-food-400x250.png" alt="Post 1" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Food Posts</h3>
+              <p>This is a short excerpt for the first featured blog post.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+            <img src="recent-experiences-solo-travel-group-travel-400x250.jpg" alt="Post 2" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Travel Posts</h3>
+              <p>This is a short excerpt for the second featured blog post.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+            <img src="Healthy-Lifestyle-400x250.jpg" alt="Post 3" class="w-full h-48 object-cover" />
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Health & Lifestyle Posts</h3>
+              <p>This is a short excerpt for the third featured blog post.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-12 bg-purple-700 text-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Categories</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors">Technology</span>
+          <span class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors">Lifestyle</span>
+          <span class="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600 transition-colors">Travel</span>
+          <span class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 transition-colors">Food</span>
+          <span class="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600 transition-colors">Fitness</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
+        <p class="mb-6 text-gray-700">Have questions or want to collaborate? Feel free to reach out!</p>
+        <form class="max-w-xl mx-auto space-y-4">
+          <div>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+          </div>
+          <div>
+            <textarea
+              rows="4"
+              placeholder="Your Message"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="px-6 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+      <!-- Newsletter -->
+      <section class="py-12 bg-purple-700 text-black">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+          <p class="mb-6">Stay updated with our latest blog posts and exclusive content.</p>
+          <form class="max-w-md mx-auto flex">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="flex-1 px-4 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+            <button
+              type="submit"
+              class="px-6 py-2 bg-purple-500 text-white rounded-r-md hover:bg-purple-600 transition-colors"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-900 text-white py-6">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <p>&copy; 2024 Test Blog. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" class="hover:text-gray-400"><img src="icons8-facebook-48.png" alt="Facebook" class="h-6" /></a>
+          <a href="#" class="hover:text-gray-400"><img src="twitter.png" alt="Twitter" class="h-6" /></a>
+          <a href="#" class="hover:text-gray-400"><img src="icons8-instagram-48.png" alt="Instagram" class="h-6" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
